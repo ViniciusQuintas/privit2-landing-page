@@ -1,0 +1,593 @@
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    min-height: 657px;
+    padding: 20px;
+    background-color: #88AA00;
+}
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* menu */
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.menuFixed{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 11%;
+    background-color: #88AA00;
+    box-shadow: 0 0 18px 1px rgb(0 0 0 / 20%);
+}
+
+.menu .logo a{
+    text-decoration: none;
+}
+
+.menu .logo a h1{
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 37px;
+}
+
+.menu .menu-desktop ul{
+    display: flex;
+    margin-top: 23px;
+}
+
+.menu .menu-desktop ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.menu .menu-desktop ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* container */
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.container .cont-text{
+    width: 50%;
+}
+
+.container .cont-text h2{
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.container .cont-text p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 290px;
+    margin-bottom: 20px;
+}
+
+.container .cont-text a{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 25px;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.container .cont-img{
+    width: 50%;
+    text-align: right;
+}
+
+.container .cont-img img{
+    width: 100%;
+    max-width:  300px;  
+}
+
+.icon-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-bottom i{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* section products */
+
+section.products{
+    width: 100%;
+    padding: 40px 0;
+    background-color: white;
+}
+
+section.products .title{
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section.products .title h2{
+    font-family: 'Oswald', sans-serif; 
+    color: #222222;
+    font-size: 40px;
+}
+
+section.products .prt-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+section.products .prt-cont .prt-img{
+    width: 50%;
+}
+
+section.products .prt-cont .prt-img img{
+    width: 100%;
+    max-width: 450px;
+}
+
+section.products .prt-cont .prt-text{
+    width: 50%;
+    text-align: center;
+}
+
+section.products .prt-cont .prt-text h2{
+    font-family: 'Open Sans', sans-serif; 
+    color: #222222;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+section.products .prt-cont .prt-text p{
+    color: #222222;
+    font-family: 'Open Sans';
+    margin-bottom: 25px;    
+}
+
+section.products .prt-cont .prt-text a{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 25px;
+    background-color: #88AA00;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+/* section features */
+
+section.features{
+    width: 100%;
+    padding: 40px 0;
+    background-color: white;
+}
+
+section.features .title{
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section.features .title h2{
+    font-family: 'Oswald', sans-serif; 
+    color: #222222;
+    font-size: 40px;
+}
+
+section.features .ft-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.features .ft-cont .ft-text{
+    width: 50%;
+    text-align: center;
+}
+
+section.features .ft-cont .ft-text .ft-label{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.features .ft-cont .ft-text .ft-label span{
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+section.features .ft-cont .ft-text .ft-label p{
+    color: #222222;
+    font-family: 'Open Sans';
+}
+
+section.features .ft-cont .gra{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+section.features .ft-cont .gra .ft-grafico{
+    width: 90%;
+}
+
+/* section cta */
+
+section.cta{
+    width: 100%;
+    padding: 60px  0;
+    background-color: #222222;
+}
+
+section.cta .cta-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section.cta .cta-title h2{
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 40px;
+}
+
+section.cta .cta-input{
+    width: 100%;
+    text-align: center;
+}
+
+section.cta .cta-input input[type="email"]{
+    width: 50%;
+    height: 40px;
+    padding-left: 30px;
+    border: none;
+    outline: none;
+    max-width: 100%;
+}
+
+section.cta .cta-input input[type="submit"]{
+    width: 20%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #88AA00;
+    color: white;
+    cursor: pointer;
+}
+
+/* section about */
+
+section.about{
+    width: 100%;
+    padding: 40px 0;
+    background-color: #FAFBFC;
+}
+
+section.about .title{
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section.about .title h2{
+    font-family: 'Oswald', sans-serif; 
+    color: #222222;
+    font-size: 40px;
+}
+
+section.about .abt-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+section.about .abt-cont .card{
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #222222;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+section.about .abt-cont .card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+section.about .abt-cont .card h2{
+    font-family: 'Oswald', sans-serif; 
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+section.about .abt-cont .card p{
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif; 
+    color: #222222;
+}
+
+section.about .abt-button{
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+section.about .abt-button a{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 25px;
+    background-color: #88AA00;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+/* section contact */
+
+section.contact{
+    width: 100%;
+    padding: 40px 0;
+    background-color: #FAFBFC;
+}
+
+section.contact .title{
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section.contact .title h2{
+    font-family: 'Oswald', sans-serif; 
+    color: #222222;
+    font-size: 40px;
+}
+
+section.contact .ct-inputs{
+    width: 100%;
+    text-align: center;
+}
+
+section.contact .ct-inputs .ipt{
+    margin-bottom: 25px;
+}
+
+section.contact .ct-inputs .ipt input{
+    width: 70%;
+    height: 40px;
+    padding: 0 30px;
+    outline: none;
+    border: none;
+    background-color:white;
+    border: 2px solid #222222;
+}
+
+section.contact .ct-inputs .ipt textarea{
+    width: 70%;
+    padding: 15px 30px;
+    resize: none;
+    outline: none;
+    border: none;
+    border: 2px solid #222222;
+}
+
+section.contact .ct-inputs .ipt input[type="submit"]{
+    border-radius: 25px;
+    background-color: #88AA00;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: #FAFBFC;
+    padding: 20px 20px;
+}
+
+footer .ft-text{
+    width: 100%;
+    text-align: center;
+}
+
+footer .ft-text h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #222222;
+    font-size: 22px;
+}
+
+/* menu responsivo */
+
+.abrirMenu{
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    right: 11%;
+}
+
+.abrirMenu i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav.mobile{
+    width: 100%;   
+    text-align: center;
+    transition: 1s;
+    display: none;
+}
+
+nav.mobile .menu-mobile{
+    display: none;
+    margin-top: 40px;
+}
+
+nav.mobile .menu-mobile li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+nav.mobile .menu-mobile li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px){
+    .menu .menu-desktop{
+        display: none;
+    }
+
+    .menu .abrirMenu{
+        display: block;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+}
+
+/* container responsivo  */
+
+@media screen and (max-width: 680px){
+    .container{
+        display: block;
+    }
+    
+    .container .cont-text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .container .cont-text p{
+        max-width: 100%;
+    }
+    
+    .container .cont-img{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* section products responsivo  */
+
+@media screen and (max-width: 780px){
+    
+    section.products .prt-cont{
+        display: block;
+    }
+    
+    section.products .prt-cont .prt-img{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    section.products .prt-cont .prt-text{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* section features responsivo  */
+
+@media screen and (max-width: 780px){
+    section.features .ft-cont{
+        display: block; 
+    }
+    
+    section.features .ft-cont .ft-text{
+        width: 100%;
+        text-align: center;
+    }
+    
+    section.features .ft-cont .ft-text .ft-label{
+        display: block;
+    }
+    
+    section.features .ft-cont .ft-text .ft-label span{
+        display: inline-block;
+    }   
+
+    section.features .ft-cont .gra{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section.features .ft-cont .gra .ft-grafico{
+        width: 50%;
+    }
+}
